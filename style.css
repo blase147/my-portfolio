@@ -22,21 +22,16 @@
   color: #fff;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 120px 24px;
-  gap: 12px;
-  position: absolute;
-  top: 92px;
-  background: #1c1a19;
-}
-
-.main p,
-h3 {
-  color: #fff;
-}
+.main-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 24px;
+    gap: 12px;
+    position: absolute;
+    
+    /* Theme 3 / Neutral 1 */
+    background: #1C1A19;}
 
 .primary-text {
   font-style: normal;
@@ -56,8 +51,6 @@ h3 {
   font-style: normal;
   color: #fff;
   flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 .primary-text h3 {
@@ -84,18 +77,11 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-
   /* or 130% */
   display: flex;
   align-items: center;
-
   /* Theme 3 / Neutral 1 */
   color: #1c1a19;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .title {
@@ -124,36 +110,23 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-
   /* identical to box height, or 141% */
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-
   /* Theme 2 / Neutral 11 */
   color: #fff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .featured-image {
   /* Featured Img */
-
   /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0 24px;
   gap: 24px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .featured-image p {
@@ -161,14 +134,8 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-
   /* Neutrals/N900 */
   color: #091e42;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .title-text p {
@@ -180,40 +147,26 @@ h3 {
 
 .tags {
   /* Tags */
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
   gap: 12px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 .tag {
   /* Tag */
   box-sizing: border-box;
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-
   /* Neutrals/N0 */
   background: #fff;
-
   /* Neutrals/N90 */
   border: 1px solid #8993a4;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .projects {
@@ -230,7 +183,6 @@ h3 {
   position: absolute;
   left: 0;
   top: 4137px;
-
   /* Theme 3 / Neutral 1 */
   background: #1c1a19;
 }
@@ -240,17 +192,10 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
-
   /* or 122% */
   letter-spacing: 0.37px;
-
   /* Theme 3 / Primary 1 */
   color: #ff6b00;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .about-me p {
@@ -258,16 +203,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-
-  /* or 150% */
-
-  /* Neutrals/N20 */
   color: #f4f5f7;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .about-me-2 p {
@@ -275,53 +211,31 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-
-  /* or 138% */
   text-align: center;
-
   /* Neutrals/N800 */
   color: #172b4d;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .get-resume-button {
   /* Button / Enable */
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
-
-  /* Theme 3 / Primary 1 */
   background: #ff6b00;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
-
+ul {
+    list-style-type:none;
+}
 .skills-title {
   /* Language */
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-
-  /* or 138% */
-  display: flex;
   align-items: center;
   color: #fff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .submit {
@@ -329,22 +243,8 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-
-  /* identical to box height, or 141% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  /* Theme 2 / Neutral 11 */
-  color: #fff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .footer {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
