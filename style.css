@@ -11,7 +11,6 @@
 
 .time {
   /* ↳ Time */
-  position: absolute;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -28,7 +27,6 @@
     align-items: flex-start;
     padding: 120px 24px;
     gap: 12px;
-    position: absolute;
     
     /* Theme 3 / Neutral 1 */
     background: #1C1A19;}
@@ -171,7 +169,6 @@
 
 .projects {
   /* Img Placeholder */
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -180,11 +177,11 @@
 }
 
 .about-me {
-  position: absolute;
   left: 0;
   top: 4137px;
   /* Theme 3 / Neutral 1 */
   background: #1c1a19;
+  background-image: url('img/illustration-header-mobile.png');
 }
 
 .about-me h1 {
