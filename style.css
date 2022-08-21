@@ -22,14 +22,15 @@
 }
 
 .main-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 120px 24px;
-    gap: 12px;
-    
-    /* Theme 3 / Neutral 1 */
-    background: #1C1A19;}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+
+  /* Theme 3 / Neutral 1 */
+  background: #1c1a19;
+}
 
 .primary-text {
   font-style: normal;
@@ -75,9 +76,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
+
   /* or 130% */
   display: flex;
   align-items: center;
+
   /* Theme 3 / Neutral 1 */
   color: #1c1a19;
 }
@@ -108,17 +111,20 @@
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
+
   /* identical to box height, or 141% */
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+
   /* Theme 2 / Neutral 11 */
   color: #fff;
 }
 
 .featured-image {
   /* Featured Img */
+
   /* Auto layout */
   display: flex;
   flex-direction: column;
@@ -132,6 +138,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
   /* Neutrals/N900 */
   color: #091e42;
 }
@@ -145,6 +152,7 @@
 
 .tags {
   /* Tags */
+
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -156,13 +164,16 @@
 .tag {
   /* Tag */
   box-sizing: border-box;
+
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
+
   /* Neutrals/N0 */
   background: #fff;
+
   /* Neutrals/N90 */
   border: 1px solid #8993a4;
 }
@@ -179,6 +190,7 @@
 .about-me {
   left: 0;
   top: 4137px;
+
   /* Theme 3 / Neutral 1 */
   background: #1c1a19;
   background-image: url('img/illustration-header-mobile.png');
@@ -189,8 +201,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
+
   /* or 122% */
   letter-spacing: 0.37px;
+
   /* Theme 3 / Primary 1 */
   color: #ff6b00;
 }
@@ -209,12 +223,14 @@
   font-weight: 700;
   font-size: 32px;
   text-align: center;
+
   /* Neutrals/N800 */
   color: #172b4d;
 }
 
 .get-resume-button {
   /* Button / Enable */
+
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -223,9 +239,11 @@
   gap: 10px;
   background: #ff6b00;
 }
+
 ul {
-    list-style-type:none;
+  list-style-type: none;
 }
+
 .skills-title {
   /* Language */
   font-style: normal;
