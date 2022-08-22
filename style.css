@@ -5,7 +5,6 @@ body {
   justify-content: center;
   width: 23.437em;
   margin: auto;
-  background-color: #f4f5f7;
 }
 
 .app-bar {
@@ -124,50 +123,30 @@ ul li {
 
 .my-recent-works {
   /* Title */
-  padding-top: 120px;
+  padding-top: 40px;
   background-color: #fff;
 }
 
-.my-recent-works h1 {
-  padding: 12px;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-.title {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 0;
-  text-align: left;
-  margin-top: 140px;
-}
-
-.title img {
-  margin-top: 50px;
-}
-
-.see-projects {
-  /* See Project */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  background-image: url('img/bg-image.png');
-
-  /* identical to box height, or 141% */
+.my-recent-works hr {
+  width: 80%;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
+}
 
-  /* Theme 2 / Neutral 11 */
-  color: #fff;
-  width: 100%;
+.my-recent-works h1 {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .featured-image {
   /* Featured Img */
   box-sizing: border-box;
-  padding: 12px;
   margin-top: 45px;
+  border: 0;
+  padding: 24px;
 }
 
 .featured-image h2 {
@@ -183,7 +162,6 @@ ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 12px;
 }
 
 .featured-image ul {
@@ -195,10 +173,22 @@ ul li {
   margin-top: 2px;
 }
 
-button.featured-image {
-  margin-left: 12px;
-  margin-top: 2px;
-  border-collapse: collapse;
+.featured-image ul li:hover {
+  background-color: #ff6b00;
+  border: solid 2px cornsilk;
+}
+
+button {
+  color: #fff;
+  background: #ff6b00;
+  height: 48px;
+  border: 0;
+}
+
+.featured-image > button {
+  width: 7.75em;
+  border: 0;
+  margin: auto;
 }
 
 .tags {
@@ -212,11 +202,13 @@ button.featured-image {
   padding: 10px 12px;
   border-spacing: 22px;
   background: rgba(255, 255, 255, 0.24);
+  border: solid 1px #3c3a39;
 }
 
 .projects {
-  /* Img Placeholder */
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('img/bg-image.png');
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(img/bg-image.png);
+  width: 20.4em;
+  height: 24.1em;
   margin: auto;
 }
 
@@ -230,18 +222,18 @@ button.featured-image {
   color: #fff;
 
   /* margin-bottom: 40px; */
-  margin: 12px;
+  margin: 24px;
+  margin-bottom: 70px;
 }
 
 .projects p {
-  width: 295px;
+  margin: auto;
   height: 87px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin-top: 12px;
   padding: 12px;
 }
 
@@ -255,19 +247,19 @@ button.featured-image {
   line-height: 24px;
 }
 
-#about {
-  height: 1700px;
-  background: #1c1a19;
-  color: #fff;
+.projects ul li:hover {
+  background-color: #ff6b00;
 }
 
-button {
-  padding: 12px;
-  color: #fff;
-  background: #ff6b00;
+.projects > button {
+  width: 100%;
   border-collapse: collapse;
-  width: 161px;
-  height: 48px;
+}
+
+#about {
+  background: #1c1a19;
+  color: #fff;
+  margin-top: 150px;
 }
 
 button:hover {
@@ -308,6 +300,7 @@ button:hover {
 
 .about-me button {
   padding: 12px;
+  width: 161px;
 }
 
 .skills {
