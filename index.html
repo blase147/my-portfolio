@@ -12,33 +12,34 @@
 
 <body>
   <header class="app-bar">
-    <div class="tool-bar-container">
-      <h1>Chukwuma Paul Mosanya</h1>
-      <img class="menu" src="img/menu.png" alt="menu">
-    </div>
+    <a href="#">Chukwuma Paul Mosanya</a>
+    <nav><img src="img/menu.png" alt="menu"></nav>
   </header>
   <div class="main-mobile">
-    <h1 class="primary-text">Hey There. I’m Paul</h1>
-    <h3>I’am a Software Developer</h3>
-    <p>I can help you build a product , feature or website
+    <h1>Hey There. I’m Paul</h1>
+    <p>I’am a Software Developer</p>
+    <p id="primary-text-des">I can help you build a product , feature or website
       Look through some of my work and experience! If you
       like what you see and have a project you need coded,
       don’t hestiate to contact me.</p>
     <ul class="social-icons">
-      <li><img src="img/Angelist.png" alt="icon"></li>
+      <li><img src="img/teddy.png" alt="icon"></li>
       <li><img src="img/Linkedin.png" alt="icon"></li>
       <li><img src="img/Icon-Angelist.png" alt="icon"></li>
       <li><img src="img/twitter.png" alt="icon"></li>
       <li><img src="img/Icon-Medium.png" alt="icon"></li>
     </ul>
+    <img class="illustration-1" src="mg/Illustration-header.jpg" alt="illustration">
   </div>
 
-  <div class="my-recent-works">
+  <section class="my-recent-works">
     <h1 class="title">My Recent Works</h1>
+
     <hr>
+
     <div class="featured-image">
-      <img src="img/Img-Placeholder.jpg" alt="">
-      <h1 class="title-post">Multi-Post Stories</h1>
+      <img src="img/Img-Placeholder.jpg" alt="image">
+      <h2>Multi-Post Stories</h2>
       <p>A daily selection of privately personalized reads;
         no accounts or sign-ups required. This has been
         the industry's standard dummy text ever since the 1500s,
@@ -51,35 +52,36 @@
       </ul>
       <button type="button">See Project</button>
     </div>
-  </div>
+    <div class="projects">
+      <h1>Professional Art Printing Data</h1>
+      <p>A daily selection of privately personalized reads;
+        no accounts or sign-ups required.
+        has been the industry's standard</p>
+      <ul class="tags">
+        <li class="tag">html</li>
+        <li class="tag">bootstrap</li>
+        <li class="tag">Ruby</li>
+      </ul>
+      <button type="button">See Project</button>
+    </div>
+  </section>
 
-  <div class="projects">
-    <h1 class="title-text">Professional Art Printing Data</h1>
-    <p>A daily selection of privately personalized reads;
-      no accounts or sign-ups required.
-      has been the industry's standard</p>
-    <ul class="tags">
-      <li class="tag">html</li>
-      <li class="tag">bootstrap</li>
-      <li class="tag">Ruby</li>
-    </ul>
-  </div>
-  <button type="button" class="see-projects">See Project</button>
 
-  <div id="about">
+  <section id="about">
     <div class="about-me">
       <h1>About me</h1>
       <p>Hello I’m a software developer! I can help you build a product,
         feature or website Look through some of my work and experience!
         If you like what you see and have a project you need coded,
         don’t hestiate to contact me.</p>
-      <button type="button">Get Resume</button>
+      <button type="button">Get My Resume</button>
     </div>
+
     <hr>
 
     <div id="langauge" class="skills">
-      <img src="img/Rectangle-55.png" alt="">
-      <h1>Language</h1>
+      <img src="img/Rectangle-55.png" alt="icon">
+      <h1 class="skills">Language</h1>
       <ul>
         <li>Javascript</li>
         <li>Ruby</li>
@@ -89,8 +91,8 @@
     </div>
 
     <div id="framework" class="skills">
-      <img src="img/Rectangle-56.png" alt="">
-      <h1>Frameworks</h1>
+      <img src="img/Rectangle-56.png" alt="icon">
+      <h1 class="skills">Frameworks</h1>
       <ul>
         <li>Bootstrap</li>
         <li>Ruby on Rails</li>
@@ -100,9 +102,9 @@
       </ul>
     </div>
 
-    <div class="skills">
-      <img src="img/Rectangle-57.png" alt="">
-      <h1>Skills</h1>
+    <div id="skills" class="skills">
+      <img src="img/Rectangle-57.png" alt="icon">
+      <h1 class="skills">Skills</h1>
       <ul>
         <li>Codeit</li>
         <li>Github</li>
@@ -111,28 +113,33 @@
         <li>Terminal</li>
       </ul>
     </div>
-    <div class="about-me-2">
-      <p>I'm always interested in hearing about new projects,
-        so if you'd like to chat please get in touch.</p>
-    </div>
+  </section>
+
+  <div class="about-me-2">
+    <p>I'm always interested in hearing about new projects,
+      so if you'd like to chat please get in touch.</p>
   </div>
-  <div>
+  <section id="get-in-touch">
     <form action="index.html">
       <input type="text" placeholder="Fullname">
+      <hr>
       <input type="email" name="email" id="email" placeholder="Email address">
-      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter text here"></textarea>
+      <hr>
+      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter text here"></textarea> <br>
       <input class="submit" type="submit" value="Get in touch">
     </form>
-  </div>
+  </section>
+
   <hr>
-  <footer class="footer">
+
+  <footer>
     <ul class="social-icons">
-      <li><img src="img/Vector(1).png" alt="icon"></li>
       <li><img src="img/Vector(5).png" alt="icon"></li>
       <li><img src="img/Icon-Linkedin.png" alt="icon"></li>
       <li><img src="img/Vector(1).png" alt="icon"></li>
       <li><img src="img/Vector(2).png" alt="icon"></li>
       <li><img src="img/Vector(9).png" alt="icon"></li>
+      <hr>
     </ul>
   </footer>
 </body>
