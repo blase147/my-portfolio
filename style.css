@@ -50,7 +50,6 @@ nav {
   background-repeat: no-repeat;
   background-attachment: relative;
   background-position: bottom right;
-
   /* Theme 3 / Neutral 1 */
   padding: 1em;
   background-color: #1c1a19;
@@ -97,12 +96,13 @@ nav {
 .social-icons {
   display: flex;
   flex: content;
-  justify-content: space-around;
   padding: 0;
   width: 200px;
   height: 40px;
 }
-
+.social-icons li:hover {
+    background-color: #ff6b00;
+}
 ul li {
   list-style-type: none;
 }
@@ -152,11 +152,9 @@ ul li {
 
 .featured-image {
   /* Featured Img */
-  gap: 24px;
   box-sizing: border-box;
   padding: 12px;
-  margin: auto;
-  width: 100%;
+  margin-top: 45px;
 }
 
 .featured-image h2 {
@@ -207,17 +205,157 @@ button {
 
 .tags {
   /* Tags */
-  list-style-type: none;
-  display: flex;
-  flex: content;
-  flex-direction: row;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  display: grid;
+  column-gap: 5px;
 }
 
 .tag {
   /* Tag */
   padding: 10px 12px;
   border-spacing: 22px;
+  background: rgba(255, 255, 255, 0.24);
 }
+
+.projects {
+    /* Img Placeholder */
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('img/bg-image.png');
+    margin: auto;
+  }
+  
+  .projects h1 {
+    height: 91px;
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 54px;
+    color: #fff;
+    /* margin-bottom: 40px; */
+    margin: 12px;
+  }
+  
+  .projects p {
+    width: 295px;
+    height: 87px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 12px;
+    padding: 12px;
+  }
+  
+  .projects ul {
+    list-style-type: none;
+    display: flex;
+    flex: content;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .projects ul li {
+    color: #fff;
+    border: solid 1px #1c1a19;
+    border-spacing: 22px;
+  }
+  
+  #about {
+    height: 1700px;
+    background: #1C1A19;
+    color: #fff;
+  }
+  button {
+    padding: 12px;
+    color: #fff;
+    background: #ff6b00;
+    border-collapse: collapse;
+    width: 161px;
+height: 48px;
+} 
+button:hover {
+    background-color: #172b4d;
+}
+  .about-me {
+    height: 450px;
+    background: url(img/illustration-header-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: bottom right;
+  }
+  
+  .about-me h1 {
+    font-weight: 400;
+    font-size: 72px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    margin-bottom: 24px;
+    margin-left: 12px;
+  }
+  
+  .about-me p {
+    margin: 12px;
+  }
+  
+  .about-me-2 p {
+    /* Primary Text */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    /* Neutrals/N800 */
+    color: #172b4d;
+  }
+ .about-me button {
+    padding: 12px;
+ } 
+  .skills {
+    display: grid;
+    justify-content: center;
+    justify-content: space-around;
+    height: 150px;
+    row-gap:32px;
+  }
+  
+  .skills ul li {
+    justify-content: space-around;
+  }
+  
+  .skills-title {
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+    margin-top: 100px;
+  }
+  
+  .skills-title img {
+    margin: auto;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    margin-left: 200px;
+    margin-right: 0px;
+  }
+  
+  .submit {
+    /* Get in touch */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 12px;
+    gap: 10px;
+    width: 131px;
+    height: 48px;
+    color: #fff;
+    background: #ff6b00;
+  }
+  .submit:hover  {
+    background-color: #172b4d;
+  }
+  footer {
+    display: grid;
+    grid-template-rows:auto;
+    align-content: center;
+    justify-items: center;
+  }
