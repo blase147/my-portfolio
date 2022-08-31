@@ -331,23 +331,45 @@ ul li .skills {
   margin-right: 0;
 }
 
-.submit {
-  /* Get in touch */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  padding: 12px;
-  gap: 10px;
-  width: 131px;
-  height: 48px;
-  color: #fff;
-  background: #ff6b00;
+.get-in-touch {
+  display: flex;
+  /* flex: auto; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  box-sizing: border-box;
+  width: 100%;
+  row-gap: 10px;
 }
 
-.submit:hover {
-  background-color: #172b4d;
-}
 
+form {
+  width: 100%;
+}
+form input {
+  width: 100%;
+  margin: 10px 10px;
+  /* padding: 10px 10px; */
+  border-bottom: solid 1px grey;
+}
+form ul li:nth-child(3) {
+  border: 0px;
+}
+input {
+  border: 0px;
+  width: 100%;
+  margin: 15px;
+}
+textarea {
+  border: 0px;
+  width: 100%;
+  margin: 5px;
+  background-color: antiquewhite;
+}
+.button {
+  margin-bottom: 80px;
+}
 footer {
   display: grid;
   grid-template-rows: auto;
