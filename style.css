@@ -333,43 +333,46 @@ ul li .skills {
 
 .get-in-touch {
   display: flex;
+
   /* flex: auto; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:auto;
+  margin: auto;
   box-sizing: border-box;
   width: 100%;
   row-gap: 10px;
 }
 
-
 form {
   width: 100%;
 }
+
+input {
+  width: 100%;
+  margin: 15px;
+  border: 0;
+}
+
 form input {
   width: 100%;
-  margin: 10px 10px;
+  margin: 5px;
+
   /* padding: 10px 10px; */
   border-bottom: solid 1px grey;
 }
-form ul li:nth-child(3) {
-  border: 0px;
-}
-input {
-  border: 0px;
-  width: 100%;
-  margin: 15px;
-}
+
 textarea {
-  border: 0px;
   width: 100%;
   margin: 5px;
   background-color: antiquewhite;
+  border: 0;
 }
+
 .button {
   margin-bottom: 80px;
 }
+
 footer {
   display: grid;
   grid-template-rows: auto;
