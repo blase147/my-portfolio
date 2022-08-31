@@ -13,7 +13,7 @@ body {
 
 @media only screen and (min-width: 1440px) {
   .body {
-    width: 1440px;
+    width: 90em;
     height: 870px;
   }
 }
@@ -69,14 +69,14 @@ nav {
 
 @media only screen and (min-width: 1440px) {
   .main-mobile {
-    width: 1440px;
+    width: 90em;
     height: 870px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .app-bar {
-    width: 1440px;
+    width: 90em;
     height: 870px;
   }
 }
@@ -158,21 +158,37 @@ ul li {
 }
 
 @media only screen and (min-width: 1440px) {
-  .my-recent-works {
+  .my-recent-works-title {
+
+    /* Auto layout */
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
     margin: auto;
-    gap: 5px;
     width: 1440px;
+    align-content: center;
+  justify-content: left; 
+
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .my-recent-works {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    margin: auto;
+    width: 1440px;
+    align-content: center;
+    justify-content: center; 
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
   .featured-image {
-    width: 100%;
-    margin-top: 30px;
-    border: 0;
-    padding: 24px;
   }
 }
 
@@ -261,11 +277,13 @@ button {
   .main-project {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 20px;
-    row-gap: 20px;
+    row-gap: 50px;
     margin: auto;
+    column-gap: 30px;
     width: 1440px;
-  }
+    align-content: center;
+  justify-content: center; 
+ }
 }
 
 .projects {
@@ -273,6 +291,16 @@ button {
   width: 20.4em;
   height: 24.1em;
   margin: auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  .projects {
+    height: 435px;
+    width: 369px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+      }
 }
 
 .projects h1 {
@@ -426,6 +454,7 @@ ul li .skills {
 form {
   width: 100%;
   margin: 50px;
+  padding: 30px;
 }
 
 input {
