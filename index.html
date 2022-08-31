@@ -16,12 +16,14 @@
     <nav><img src="img/menu.png" alt="menu"></nav>
   </header>
   <section class="main-mobile">
-    <h1>Hey There. I’m Paul</h1>
+    <div>
+      <h1>Hey There. I’m Paul</h1>
     <h2>I’am a Software Developer</h2>
     <p id="primary-text-des">I can help you build a product , feature or website
       Look through some of my work and experience! If you
       like what you see and have a project you need coded,
       don’t hestiate to contact me.</p>
+    </div>
     <ul class="social-icons">
       <li><a href="https://github.com/blase147"><img src="img/Icon-GitHub.png" alt="icon"></a></li>
       <li><a href="www.linkedin.com/in/chukwuma-mosanya-346453"><img src="img/Linkedin.png" alt="icon"></a></li>
@@ -31,11 +33,15 @@
     </ul>
   </section>
 
-  <section class="my-recent-works">
+  <section class="my-works">
     <h1>My Recent Works</h1>
     <hr>
+    <div class="my-recent-works">
     <div class="featured-image">
       <img src="img/Img-Placeholder.jpg" alt="image">
+    </div>
+    
+    <div class="multi-post-stories">
       <h2>Multi-Post Stories</h2>
       <p>A daily selection of privately personalized reads;
         no accounts or sign-ups required. This has been
@@ -49,9 +55,11 @@
       </ul>
       <button type="button">See Project</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <div class="projects">
+<section class="main-project">  
+<div class="projects">
     <h1>Professional Art Printing Data</h1>
     <p>A daily selection of privately personalized reads;
       no accounts or sign-ups required.
@@ -123,8 +131,9 @@
     </ul>
     <button type="button">See Project</button>
   </div>
+</section>
 
-  <section id="about">
+  <section class="about">
     <div class="about-me">
       <h1>About me</h1>
       <p>Hello I’m a software developer! I can help you build a product,
@@ -178,21 +187,21 @@
     </div>
   </section>
 
-  <section class="about-me-2">
-    <p>I'm always interested in hearing about new projects,
-      so if you'd like to chat please get in touch.</p>
-
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form class="get-in-touch" action="https://formspree.io/f/xqkjanrn" method="POST">
-        <input type="text" name="fullname" maxlength="30" placeholder="Fullname" required>
-        <input type="email" name="email" placeholder="Email address" required>
-        <textarea name="comment" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
-        <!-- your other form fields go here -->
-        <button class="button" type="submit">Get in touch</button>
-    </form>
-  </section>
   <footer>
-    <hr>
+    <section class="about-me-2">
+      <p>I'm always interested in hearing about new projects,
+        so if you'd like to chat please get in touch.</p>
+  
+      <!-- modify this form HTML and place wherever you want your form -->
+      <form class="get-in-touch" action="https://formspree.io/f/xqkjanrn" method="POST">
+          <input type="text" name="fullname" maxlength="30" placeholder="Fullname" required>
+          <input type="email" name="email" placeholder="Email address" required>
+          <textarea name="comment" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
+          <!-- your other form fields go here -->
+          <button class="button" type="submit">Get in touch</button>
+      </form>
+      <div><hr></div>
+    </section>
     <ul class="social-icons">
       <li><a href="https://github.com/blase147"><img src="img/Icon-GitHub2.png" alt="icon"></a></li>
       <li><a href="www.linkedin.com/in/chukwuma-mosanya-346453"><img src="img/Icon-Linkedin.png" alt="icon"></a></li>
@@ -200,10 +209,8 @@
       <li><a href="https://twitter.com/ChukwumaMosanya"><img src="img/Icon-Twitter2.png" alt="icon"></a></li>
       <li><a href="www.medium.com"><img src="img/Icon-Medium2.png" alt="icon"></a></li>
     </ul>
-
   </footer>
-  <hr>
-
+      <div><hr class="footer-rule"></div>
 </body>
 
 </html>
