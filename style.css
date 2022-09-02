@@ -4,21 +4,17 @@
 
 body {
   width: 100%;
-  /* width: 23.437em; */
-  /* margin: auto; */
   padding: 0;
   margin: 0;
 }
 
 .app-bar {
-  /* App Bar - Compact - Dark - iOS */
   background: #3c3a39;
   display: flex;
   flex: content;
   flex-direction: row;
   padding-top: 24px;
   padding-bottom: 24px;
-  /* height: 102px; */
   width: 100%;
 }
 
@@ -33,7 +29,6 @@ nav {
   flex: content;
   flex-direction: row;
   justify-content: end;
-  /* margin: auto; */
 }
 
 .main-mobile {
@@ -54,7 +49,6 @@ nav {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin-right: 24px;
-  margin-bottom: 0px;
 }
 
 .main-mobile h2 {
@@ -77,6 +71,16 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.projects ul li {
+  color: #fff;
+  border: solid 1px #1c1a19;
+  border-spacing: 22px;
 }
 
 .social-icons li:hover {
@@ -153,7 +157,18 @@ button {
   border: 0;
 }
 
-.multi-post-stories>button {
+form div > button {
+  display: flex;
+  justify-content: center;
+  align-content: cent;
+  margin-left: 125px;
+  margin-top: 20px;
+  width: 8.86em;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.multi-post-stories > button {
   width: 7.75em;
   border: 0;
   margin: auto;
@@ -193,12 +208,10 @@ button {
 
 .projects h1 {
   height: 91px;
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 52px;
   line-height: 54px;
   color: #fff;
-  /* margin-bottom: 40px; */
   margin: 24px;
   margin-bottom: 70px;
 }
@@ -224,19 +237,9 @@ button {
   line-height: 24px;
 }
 
-.projects>button {
+.projects > button {
   width: 100%;
   border-collapse: collapse;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-.projects ul li {
-  color: #fff;
-  border: solid 1px #1c1a19;
-  border-spacing: 22px;
 }
 
 .projects ul li:hover {
@@ -293,7 +296,6 @@ button:hover {
   text-align: center;
   color: #172b4d;
   padding-top: 70px;
-  padding: 30px;
 }
 
 .about-me button {
@@ -357,7 +359,6 @@ form input {
   width: 100%;
   border-bottom: solid 1px grey;
   margin-bottom: 35px;
-  
 }
 
 textarea {
@@ -366,16 +367,6 @@ textarea {
   border: 0;
 }
 
-form div  > button {
-  display: flex;
-  justify-content: center;
-  align-content: cent;
-  margin-left: 125px;
-  margin-top: 20px;
-  width: 8.86em;
-  padding: 15px;
-  font-weight: 600;
-}
 .button {
   margin-bottom: 80px;
 }
@@ -395,7 +386,6 @@ footer {
   align-items: center;
 }
 
-/* For Larger screens*/
 @media only screen and (min-width: 768px) {
   html {
     padding: 0;
@@ -436,20 +426,20 @@ footer {
     display: flex;
     flex-direction: column;
     width: 35.375em;
-    margin-left: 40px;
-    padding: 92px 0px;
     margin-left: 7.5em;
   }
+
   .main-mobile h2 {
     font-weight: 1500;
     font-size: 2.5em;
   }
-  
+
   #primary-text-des {
     font-weight: 400;
     font-size: 1.5em;
     line-height: 33px;
   }
+
   .social-icons-container ul {
     position: absolute;
     bottom: px;
@@ -457,12 +447,11 @@ footer {
     left: 15px;
     display: block;
     justify-content: space-around;
-    
   }
+
   .social-icons-container ul li {
-  margin: 32px;    
+    margin: 32px;
   }
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -471,10 +460,6 @@ footer {
     align-items: baseline;
     padding-left: 170px;
     width: 100%;
-  }
-  
-  .my-recent-works-title-hr {
-    padding-bottom: 0px;
   }
 
   .my-recent-works {
@@ -500,10 +485,6 @@ footer {
 @media only screen and (min-width: 768px) {
   .featured-image {
     height: 448px;
-    width: 684px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
   }
 }
 
@@ -532,9 +513,11 @@ footer {
   .bg-image3 {
     background: url(img/bg-image3.jpg);
   }
+
   .bg-image4 {
     background: url(img/bg-image4.png);
   }
+
   .project-1-display {
     margin-top: 350px;
     display: none;
@@ -599,9 +582,8 @@ footer {
 
   .about-me-2 p {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 52px;
-    letter-spacing: 0em;
     text-align: left;
     width: 100%;
   }
@@ -617,27 +599,23 @@ footer {
     justify-content: flex-start;
   }
 
+  form div > button {
+    display: flex;
+    justify-content: center;
+    align-content: cent;
+    margin-left: 5px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 600;
+  }
+
   .align-left button {
-    width: 122px;
-    font-family: Roboto;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
     width: 8.86em;
-
-  }
-
-  form div  > button {
-    display: flex;
-    justify-content: center;
-    align-content: cent;
-    margin-left: 5px;
-    margin-top: 20px;
-    width: 20.86em;
-    padding: 15px;
-    font-weight: 600;
   }
 
   .footer-rule-1 {
