@@ -296,6 +296,8 @@ button:hover {
   text-align: center;
   color: #172b4d;
   padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .about-me button {
