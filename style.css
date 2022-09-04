@@ -475,6 +475,8 @@ form input {
   width: 100%;
   border-bottom: solid 1px grey;
   margin-bottom: 35px;
+  height: 70px;
+  padding: 13px;
 }
 
 form input:hover {
