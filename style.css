@@ -203,7 +203,7 @@ button {
   border: 0;
 }
 
-form div>button {
+form div > button {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -213,7 +213,7 @@ form div>button {
   margin: auto;
 }
 
-.multi-post-stories>button {
+.multi-post-stories > button {
   width: 161px;
   height: 60px;
   font-size: 20px;
@@ -256,7 +256,8 @@ form div>button {
 }
 
 .description {
-  font-family: "Inter", normal;
+  font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
   margin: 20px;
   font-size: 1.3rem;
 }
@@ -502,8 +503,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
   body {
-    font-family: "Crete Round", "Cambria", "Cochin" "Inter" "Roboto", Impact, "Haettenschweiler",
-      'Arial Narrow Bold', sans-serif Georgia, Times, 'Times New Roman', serif;
+    font-family: "Crete Round", "Cambria", "Cochin" "Inter" "Roboto", Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif Georgia, Times, 'Times New Roman', serif;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -678,7 +678,8 @@ footer {
   }
 
   .multi-post-stories p {
-    font-family: "Inter", normal;
+    font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 37px;
     line-height: 40px;
@@ -765,13 +766,15 @@ footer {
   }
 
   .title {
-    font-family: "Crete Round", normal;
+    font-family: "Crete Round", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
     font-size: 2.8rem;
     font-size: 2.5vw;
   }
 
   .description {
-    font-family: "Inter", normal;
+    font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
     font-size: 1.19vw;
     font-weight: 400;
     line-height: 1.49vw;
@@ -848,18 +851,16 @@ footer {
     background-repeat: no-repeat;
     background-attachment: relative;
     background-position: center right;
-    margin-bottom: 10.0vw;
+    margin-bottom: 10vw;
   }
 
   .about-me-intro {
     width: 50%;
-    margin-left: 9.0vw;
-    margin-top: 8.0vw;
+    margin-left: 9vw;
+    margin-top: 8vw;
   }
 
   .about-me-intro h1 {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     font-family: "Crete Round", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     margin-left: 0;
@@ -885,7 +886,7 @@ footer {
     width: auto;
   }
 
-  form div>button {
+  form div > button {
     display: flex;
     justify-content: center;
     align-content: cent;
@@ -895,7 +896,7 @@ footer {
     font-weight: 600;
   }
 
-  .about-me-intro>button {
+  .about-me-intro > button {
     display: flex;
     flex-direction: row;
     align-items: center;
