@@ -2,7 +2,7 @@
 
 # PORTFOLIO PROJECT
 
-> Here a link to the live view https://blase147.github.io/Mobile-first-Portfolio-Project/
+> Here is a link to the live view https://blase147.github.io/Mobile-first-Portfolio-Project/
 
 
 ## Built With
