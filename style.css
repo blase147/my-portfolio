@@ -723,6 +723,20 @@ footer {
     padding: px;
   }
 
+  button {
+    width: auto;
+  }
+
+  form div > button {
+    display: flex;
+    justify-content: center;
+    align-content: cent;
+    margin-left: 5px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 600;
+  }
+
   .multi-post-stories > button {
     width: 140px;
     height: 40px;
@@ -874,20 +888,6 @@ footer {
     font-size: 1.7vw;
     line-height: 3.1vw;
     margin-bottom: 30px;
-  }
-
-  button {
-    width: auto;
-  }
-
-  form div > button {
-    display: flex;
-    justify-content: center;
-    align-content: cent;
-    margin-left: 5px;
-    margin-top: 20px;
-    padding: 15px;
-    font-weight: 600;
   }
 
   .about-me-intro > button {
