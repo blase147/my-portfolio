@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# MOBILE-FIRST PORTFOLIO PROJECT
+# PORTFOLIO PROJECT
 
-> A Microverse project for beginer micronauts.
+> Here a link to the live view https://blase147.github.io/Mobile-first-Portfolio-Project/
 
 
 ## Built With
