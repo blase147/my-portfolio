@@ -541,7 +541,7 @@ footer {
     color: #fff;
     animation-name: logo;
     animation-duration: 4s;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .nav-items {
@@ -647,7 +647,7 @@ footer {
     font-family: "Crete Round", 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 3.3rem;
+    font-size: 2.6rem;
     padding: 0;
   }
 
@@ -689,7 +689,7 @@ footer {
     font-family: "Crete Round", 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.8rem;
+    font-size: 2.5rem;
     line-height: 52px;
     padding: 0;
     margin: 0;
@@ -699,8 +699,8 @@ footer {
     font-family: "Inter", 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 29px;
-    line-height: 39px;
+    font-size: 20px;
+    line-height: 36px;
     color: #091e42;
   }
 
@@ -709,8 +709,8 @@ footer {
     display: flex;
     flex-direction: row;
     padding-left: 0;
-    margin-top: 22px;
-    margin-bottom: 50px;
+    margin-top: 2px;
+    margin-bottom: 30px;
     margin-left: 0;
   }
 
@@ -720,7 +720,27 @@ footer {
     justify-content: left;
     justify-items: left;
     align-content: flex-end;
-    padding: 20px;
+    padding: px;
+  }
+
+  button {
+    width: auto;
+  }
+
+  form div > button {
+    display: flex;
+    justify-content: center;
+    align-content: cent;
+    margin-left: 5px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .multi-post-stories > button {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
   }
 
   .main-project {
@@ -743,7 +763,7 @@ footer {
   }
 
   .card-project-2 {
-    padding-top: 16.9em;
+    padding-top: 20.8em;
     display: flex;
     flex-direction: column;
     background-image: url(img/bg-image2.jpg);
@@ -751,7 +771,7 @@ footer {
   }
 
   .card-project-3 {
-    padding-top: 20.9em;
+    padding-top: 23.9em;
     display: flex;
     flex-direction: column;
     background-image: url(img/bg-image3.jpg);
@@ -759,7 +779,7 @@ footer {
   }
 
   .card-project-4 {
-    padding-top: 16.9em;
+    padding-top: 20.8em;
     display: flex;
     flex-direction: column;
     background-image: url(img/bg-image4.png);
@@ -767,7 +787,7 @@ footer {
   }
 
   .card-project-5 {
-    padding-top: 16.9em;
+    padding-top: 20.8em;
     display: flex;
     flex-direction: column;
     background-image: url(img/bg-image2.jpg);
@@ -775,7 +795,7 @@ footer {
   }
 
   .card-project-6 {
-    padding-top: 20.9em;
+    padding-top: 23.9em;
     display: flex;
     flex-direction: column;
     background-image: url(img/bg-image3.jpg);
@@ -805,7 +825,7 @@ footer {
   }
 
   .li {
-    border: 2px solid black;
+    border: 1px solid rgb(80, 77, 77);
     padding: 10px;
   }
 
@@ -868,20 +888,6 @@ footer {
     font-size: 1.7vw;
     line-height: 3.1vw;
     margin-bottom: 30px;
-  }
-
-  button {
-    width: auto;
-  }
-
-  form div > button {
-    display: flex;
-    justify-content: center;
-    align-content: cent;
-    margin-left: 5px;
-    margin-top: 20px;
-    padding: 15px;
-    font-weight: 600;
   }
 
   .about-me-intro > button {
@@ -998,9 +1004,9 @@ footer {
     display: flex;
     width: 40%;
     color: #262626;
-    font-size: 3.1em;
+    font-size: 2.4em;
     font-weight: 700;
-    line-height: 55px;
+    line-height: 53px;
     text-align: left;
     margin-top: 0;
   }
