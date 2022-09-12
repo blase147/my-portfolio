@@ -1,23 +1,15 @@
-const { log } = console;
-
-  console.log("DOM fully loaded and parsed");
-  var menuBtn = document.getElementById("menu-button");
-  var closeBtn = document.getElementById("close-btn");
-var menu = document.getElementById("nav-items");
-  var links = document.getElementsByClassName(".inter-link");
-menuBtn.addEventListener("click", function () {
-  menu.classList.add("menu-shown");
-  closeBtn.style.display = "block";
+const menuBtn = document.getElementById('menu-button');
+const closeBtn = document.getElementById('close-btn');
+const menu = document.getElementById('nav-items');
+menuBtn.addEventListener('click', () => {
+  menu.classList.add('menu-shown');
+  closeBtn.style.display = 'block';
 });
-  closeBtn.addEventListener("click", function () { 
-  closeBtn.style.display = "none";
-  menu.classList.remove("menu-shown");
-  }
-);
-menu.addEventListener("click", function () {
-  closeBtn.style.display = "none";
-  menu.classList.remove("menu-shown");
+closeBtn.addEventListener('click', () => {
+  closeBtn.style.display = 'none';
+  menu.classList.remove('menu-shown');
 });
-
-
-
+menu.addEventListener('click', () => {
+  closeBtn.style.display = 'none';
+  menu.classList.remove('menu-shown');
+});

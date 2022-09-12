@@ -1,7 +1,7 @@
-
 /* stlye sheet for mobile devices */
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   width: 100%;
 }
 
-.app-bar  > .myName {
+.app-bar > .myName {
   font-family: 'Roboto', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
   font-weight: 700;
@@ -55,12 +55,15 @@ nav {
   font-size: 0.9375em;
   line-height: 1.25em;
 }
-.menu-shown{
+
+.menu-shown {
   /* display: none; */
   display: flex;
   flex-direction: column;
+
   /* justify-content: center; */
   padding-top: 15vh;
+
   /* align-items: center; */
   background: #3c3a39;
   width: 100%;
@@ -71,41 +74,48 @@ nav {
   left: 0;
   z-index: 1;
 }
-.mail-btn{
+
+.mail-btn {
   display: none;
 }
+
 .menu-shown > a {
-  color: #fff;
   text-decoration: none;
   margin: 10px;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-color: #FFF5E1;
+
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
 }
-.lign-separation{
+
+.lign-separation {
   height: 1px;
-  background-color: #6F6C6B;;
+  background-color: #6f6c6b;
   width: 90%;
 }
+
 .menu {
   margin-right: 20px;
 }
-.close-btn{
+
+.close-btn {
   display: none;
   font-size: 2rem;
-  color: #67798E;
+  color: #67798e;
   margin-right: 38px;
   z-index: 3;
 }
+
 .main-mobile {
   margin: auto;
   width: 100%;
   background: url('img/illustration-header-mobile.png');
   background-repeat: no-repeat;
-  background-attachment: relative;
+
+  /* background-attachment: relative; */
   background-position: bottom right;
   padding: 2.1em;
   background-color: #1c1a19;
@@ -116,7 +126,7 @@ color: #FFF5E1;
 .main-mobile h1 {
   font-family: "Crete Round", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
-  font-weight: 2000;
+  font-weight: bolder;
   font-size: 3.01em;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -138,7 +148,7 @@ color: #FFF5E1;
   height: 123px;
   font-family: "Poppins", 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 0.99em;
   line-height: 1.5em;
 }
@@ -185,7 +195,7 @@ li:hover {
 .my-recent-work-title-h1 {
   font-family: "Crete Round", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 2.6rem;
   padding-left: 20px;
   padding-right: 20px;
@@ -214,7 +224,7 @@ li:hover {
 .multi-post-stories h2 {
   font-family: "Crete Round", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
-  font-weight: 400px;
+  font-weight: normal;
   font-size: 2em;
   line-height: 2.75em;
   margin: auto;
@@ -366,7 +376,8 @@ form div > button {
 .btn-sp {
   width: 100%;
   margin: auto;
-  margin-top: px;
+
+  /* margin-top: px; */
   height: 65px;
   font-size: 25px;
 }
@@ -398,7 +409,8 @@ button:hover {
   height: 800px;
   background: url(img/about-me-illustration.png);
   background-repeat: no-repeat;
-  background-attachment: relative;
+
+  /* background-attachment: relative; */
   background-position: bottom right;
   padding: 30px;
 }
@@ -576,7 +588,7 @@ footer {
     width: 100%;
   }
 
-  .app-bar a {
+  .app-bar > .myName {
     padding-left: 100px;
     text-decoration: none;
     color: #fff;
@@ -585,10 +597,21 @@ footer {
     font-size: 20px;
   }
 
+  .app-bar a {
+    padding-left: 100px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
   .nav-items {
-    display: inline-block;
+    display: flex;
     font-size: 24px;
     margin-right: 100px;
+  }
+
+  .lign-separation {
+    display: none;
   }
 
   .nav-items a {
@@ -605,7 +628,8 @@ footer {
     flex-wrap: wrap;
     background: url('img/Group.png');
     background-repeat: no-repeat;
-    background-attachment: relative;
+
+    /* background-attachment: relative; */
     background-position: bottom right;
     background-color: #1c1a19;
     color: #f4f5f7;
@@ -625,7 +649,7 @@ footer {
     flex-wrap: wrap;
     font-family: "Crete Round", 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
-    font-weight: 3500;
+    font-weight: bold;
     font-size: 5.5vw;
     color: #ff6b00;
   }
@@ -635,7 +659,7 @@ footer {
     flex-wrap: wrap;
     font-family: "Inter", 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
-    font-weight: 1500;
+    font-weight: bold;
     font-size: 1.6vw;
   }
 
@@ -757,11 +781,12 @@ footer {
 
   .multi-post-stories ul li {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     justify-content: left;
     justify-items: left;
     align-content: flex-end;
-    padding: px;
+
+    /* padding: px; */
   }
 
   button {
@@ -771,7 +796,8 @@ footer {
   form div > button {
     display: flex;
     justify-content: center;
-    align-content: cent;
+
+    /* align-content: cent; */
     margin-left: 5px;
     margin-top: 20px;
     padding: 15px;
@@ -898,7 +924,8 @@ footer {
     margin: auto;
     background-image: url(img/about-me-desktop.png);
     background-repeat: no-repeat;
-    background-attachment: relative;
+
+    /* background-attachment: relative; */
     background-position: center right;
     margin-bottom: 10vw;
   }
@@ -1016,8 +1043,8 @@ footer {
     margin: auto;
     width: 100%;
     flex-direction: row;
-    align-items: left;
-    align-content: left;
+    align-items: flex-start;
+    align-content: flex-start;
     margin-top: 50px;
   }
 
