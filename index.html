@@ -8,19 +8,26 @@
   <meta name="author" content="Chukwuma Paul Mosanya">
   <link rel="stylesheet" href="style.css">
   <title>Mobile First Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <header class="app-bar">
-    <a href="#">Chukwuma Paul Mosanya</a>
+    <a href="#" class="myName">Chukwuma Paul Mosanya</a>
     <nav>
-      <div class="nav-items">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="mailto:solarmails2@gmail.com"><img src="img/Icon-Mail.png" alt="mail-icon"></a>
+      <div id="nav-items" class="nav-items">
+        <a class="inter-link" href="#portfolio">Portfolio</a>
+        <div class="lign-separation"></div>
+        <a class="intern-link" href="#about">About</a>
+        <div class="lign-separation"></div>
+        <a class="intern-link" href="#contact">Contact</a>
+        <div class="lign-separation"></div>
+        <a href="mailto:solarmails2@gmail.com" class="mail-btn"><img src="img/Icon-Mail.png" alt="mail-icon"></a>
       </div>
       <img id="menu-button" class="menu" src="img/menu.png" alt="menu">
+      <div class="close-btn" id="close-btn">
+        <i class="fa-solid fa-xmark close-icon" ></i>
+      </div>
     <!-- <p id="demo" ></p> -->
     </nav>
   </header>
