@@ -556,6 +556,7 @@ footer {
   margin-bottom: 4px;
   align-items: center;
 }
+
 @media only screen and (min-width: 786px) {
   body {
     padding: 0;
@@ -608,7 +609,7 @@ footer {
   }
 
   .mail-btn {
-    visibility:visible;
+    visibility: visible;
   }
 
   .menu {
@@ -775,7 +776,7 @@ footer {
     justify-content: left;
     justify-items: left;
     align-content: flex-end;
-}
+  }
 
   button {
     width: auto;
