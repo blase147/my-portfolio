@@ -10,7 +10,7 @@ closeBtn.addEventListener('click', () => {
   menu.classList.remove('menu-shown');
 });
 
-// menu.addEventListener('click', () => {
-//   closeBtn.style.display = 'none';
-//   menu.classList.remove('menu-shown');
-// });
+menu.addEventListener('click', () => {
+  closeBtn.style.display = 'none';
+  menu.classList.remove('menu-shown');
+});
