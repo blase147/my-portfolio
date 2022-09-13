@@ -14,9 +14,12 @@ body {
   background: #3c3a39;
   display: flex;
   flex: content;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 24px;
   width: 100%;
 }
 
@@ -91,6 +94,12 @@ nav {
 
 .menu {
   margin-right: 20px;
+  /* background-color: none; */
+}
+#menu-button{
+  /* background-color: none; */
+  background: none;
+  font-size: 2rem;
 }
 
 .close-btn {
@@ -99,6 +108,7 @@ nav {
   color: #67798e;
   margin-right: 38px;
   z-index: 3;
+  background: none;
 }
 
 .main-mobile {
