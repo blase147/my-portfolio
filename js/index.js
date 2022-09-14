@@ -38,74 +38,45 @@ data.forEach((data) => {
   </div>`;
 
   projectContainer.appendChild(project);
-
-
-
-
-
-//   project.innerHTML += `<div class="projectCard">
-//                            <div class="project-image">
-//                               <img src="${src}">
-//                           </div>
-//                               <h1>${title}</h1> 
-//                           <div class="description">
-//                               <p>${description}</p>
-//                           </div>
-//                               <ul class="tags">
-//                               ${lang.map((tech) => `<li class="li">${tech}</li>`).join('')}
-//                               </ul>
-//                           <div>
-//                               <button type = "button">See Project</button>
-//                           </div>`;
-//   projectContainer.appendChild(project);
-//   popup.style.display = 'none';
-//   const projectBtn = project.querySelector('.project-btn');
-//   projectBtn.addEventListener('click', () => {
-//     document.getElementById('popup').scrollIntoView();
-//     projectContainer.style.display = 'none';
-//     popup.style.display = 'flex';
-//     const y = popup.getBoundingClientRect().top + window.scrollY;
-//     window.scroll({
-//       top: y,
-//       behavior: 'smooth',
-//     });
-//     popup.innerHTML += `<div class="popup-project-container">
-//     <div class="popup-project-header">
-//     <div class="popup-project-image"><img src="${
-//   data.src
-// }" class="popup-img" alt="projectimage"></div>
-//     <button class="popup-close-button">
-//     <i class="fa-solid fa-xmark"></i>
-//     </button>
-//         <h2 class="popup-project-title">${data.title}</h2>
-//         <ul>
-//         ${lang.map((tech) => `<li>${tech}</li>`).join('')}
-//         </ul>
-//         </div>
-//         <div class="popup-project-description">${data.description}</div>
-//         <div class="popup-project-buttons">
-//         <a href="${
-//   data.live
-// }" target="_blank"><button class="popup-project-btn">
-//         See Live<i class="fa-solid fa-globe"></i>
-//         </button></a>
-//         <a href="${
-//   data.source
-// }" target="_blank"><button class="popup-project-btn">
-//         See Source<i class="fa-brands fa-github"></i>
-//         </button></a>
-//         </div>
-//         </div>`;
-//     const closeProjectBtn = popup.querySelector('.popup-close-button');
-//     closeProjectBtn.addEventListener('click', () => {
-//       popup.firstElementChild.remove();
-//       popup.style.display = 'none';
-//       projectContainer.style.display = 'grid';
-//     });
-//   });
 });
+
   const popWindow = document.createElement("div");
   popWindow.innerHTML += `
-  
-  `;
+  <div class="popup-container">
+  <!-- popup header -->
+  <div class="popup-header">
+    <div class="popup-title">
+    <h1 class="popup-title">Multi Post Stories</h1>
+    <button class="close-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="tags">
+      <li class="li">html</li>
+      <li class="li">Bootstrap</li>
+      <li class="li">Ruby on Rail</li>
+    </ul>
+  </div>
+  <!-- popup body -->
+  <div class="popup-body">
+    <img src="/img/Snapshoot Portfolio.jpg" alt="Snapshoot">
+  </div>
+  <!-- popup footer -->
+  <div class="popup-footer">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+    took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+    but also the leap into electronic typesetting, remaining essent</p>
+    <div>
+    <div class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></div>
+    <div class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></div>
+    </div>
+  </div>
+  </div>
+</div> `;
   popup.appendChild(popWindow);
+
+  const closeProjectBtn = popup.querySelector('.close-btn');
+  closeProjectBtn.addEventListener('click', () => {
+    popup.firstElementChild.remove();
+    popup.style.display = 'none';
+    projectContainer.style.display = 'grid';
+  });
