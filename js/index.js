@@ -3,7 +3,7 @@ import data from './projectData.js';
 const menuBtn = document.getElementById('menu-button');
 const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById('nav-items');
-const projectContainer = document.getElementById("portfolio");
+const projectContainer = document.getElementById('portfolio');
 const popup = document.getElementById('popup');
 menuBtn.addEventListener('click', () => {
   menu.classList.add('menu-shown');
@@ -21,7 +21,7 @@ menu.addEventListener('click', () => {
 
 data.forEach((data) => {
   const {
-    src, title, description, lang, 
+    title, description, lang,
   } = data;
 
   const project = document.createElement('div');
@@ -40,8 +40,8 @@ data.forEach((data) => {
   projectContainer.appendChild(project);
 });
 
-  const popWindow = document.createElement("div");
-  popWindow.innerHTML += `
+const popWindow = document.createElement('div');
+popWindow.innerHTML += `
   <div class="popup-container">
   <!-- popup header -->
   <div class="popup-header">
@@ -72,11 +72,11 @@ data.forEach((data) => {
   </div>
   </div>
 </div> `;
-  popup.appendChild(popWindow);
+popup.appendChild(popWindow);
 
-  const closeProjectBtn = popup.querySelector('.close-btn');
-  closeProjectBtn.addEventListener('click', () => {
-    popup.firstElementChild.remove();
-    popup.style.display = 'none';
-    projectContainer.style.display = 'grid';
-  });
+const closeProjectBtn = popup.querySelector('.close-btn');
+closeProjectBtn.addEventListener('click', () => {
+  popup.firstElementChild.remove();
+  popup.style.display = 'none';
+  projectContainer.style.display = 'grid';
+});
