@@ -285,7 +285,36 @@ form div > button {
   gap: 24px;
   color: #fff;
 }
+.project-image {
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+  border-radius: 8px;
+  background-size: auto;
+  background-position: center;
+}
 
+.project-image > img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.projectCard {
+  height: 635px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+}
+
+.card-project {
+  height: 635px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  background-image: url('../img/bg-image2.jpg');
+  background-size: cover;
+}
+/* 
 .card-project-1 {
   height: 635px;
   display: flex;
@@ -311,7 +340,7 @@ form div > button {
   padding-top: 250px;
   background-image: url('../img/bg-image3.jpg');
   background-size: cover;
-}
+} */
 
 .description {
   font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -379,17 +408,125 @@ form div > button {
   font-size: 25px;
 }
 
-.btn-sp-1 {
+/* .btn-sp-1 {
   width: 100%;
   margin: auto;
   margin-top: 326px;
   height: 65px;
   font-size: 25px;
-}
+} */
 
 .scale-effect:hover {
   transform: scale(1.02);
 }
+
+.project-description ul > li:hover {
+  background-color: #c2c4c4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-description > .btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #32b37e;
+  color: white;
+  margin: 15px 0 25px 0;
+  transition: all 0.3s;
+}
+
+/* Popup window Project */
+.popup-project {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #c1c7d0;
+  width: 100%;
+  height: 882px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.popup-project-container {
+  border-radius: 16px;
+  width: 90%;
+  padding: 16px;
+
+  /* margin: 5vh auto; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+  align-items: center;
+  background-color: white;
+}
+
+.popup-close-button {
+  position: relative;
+  color: white;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  top: -190px;
+  right: -70vw;
+}
+
+.popup-project-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.popup-project-container > .popup-project-header > ul > li {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px 5px;
+  padding: 10px;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.popup-project-image {
+  /* display: none; */
+  width: 100%;
+  height: 200px;
+}
+
+.popup-project-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.popup-img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-project-btn {
+  margin-top: 10px;
+  font-size: 17px;
+  padding: 12px 16px;
+  background: #36b37f;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+.popup-project-btn > i {
+  padding-left: 10px;
+}
+
 
 .about {
   background: #1c1a19;
@@ -815,8 +952,45 @@ footer {
     gap: 24px;
     color: #fff;
   }
+.card-project {
+  height: 635px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  background-image: url('../img/bg-image2.jpg');
+  background-size: cover;
+}
 
-  .card-project-1 {
+.card-project:hover {
+  background-image: url('../img/bg-image-clear.png');
+  background-size: cover;
+  color: black;
+}
+
+.card-project:hover .btn-sp {
+  display: flex;
+  
+  flex-direction: row;
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  height: 65px;
+  font-size: 25px;
+}
+
+.card-project:hover, .btn-sp-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  height: 65px;
+  font-size: 25px;
+  display: block;
+}
+
+.card-project-1 {
     height: 635px;
     display: flex;
     flex-direction: column;
@@ -895,11 +1069,12 @@ footer {
   .btn-sp {
     width: 100%;
     margin: auto;
-    margin-top: 320px;
+    margin-top: 100px;
     height: 65px;
     font-size: 25px;
     display: none;
   }
+
 
   .scale-effect:hover {
     transform: scale(1.02);
