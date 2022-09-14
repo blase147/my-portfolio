@@ -8,7 +8,6 @@ const data = [
     lang :['html','>Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',
     source: 'https://github.com/blase147/Mobile-first-Portfolio-Project',
-    src: 
 },
 
 
