@@ -2,6 +2,7 @@ const data = [
   {
     id: 1,
     title: 'Data Dashboard Healthcare',
+    src: '../images/Snapshoot Portfolio.jpg',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.has been the industry standard',
     lang: ['html', 'Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',
@@ -11,6 +12,7 @@ const data = [
   {
     id: 2,
     title: 'Data Dashboard Healthcare',
+    src: '../images/Snapshoot Portfolio.jpg',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.has been the industry standard',
     lang: ['html', '>Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',
@@ -20,6 +22,7 @@ const data = [
   {
     id: 3,
     title: 'Website Portfolio',
+    src: '../images/Snapshoot Portfolio.jpg',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.has been the industry standard',
     lang: ['html', 'Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',
@@ -29,6 +32,7 @@ const data = [
   {
     id: 4,
     title: 'Professional Art Printing Data',
+    src: '../images/Snapshoot Portfolio.jpg',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.has been the industry standard',
     lang: ['html', 'Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',
@@ -38,6 +42,7 @@ const data = [
   {
     id: 5,
     title: 'Data Dashboard Healthcare',
+    src: '../images/Snapshoot Portfolio.jpg',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.has been the industry standard',
     lang: ['html', 'Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',
@@ -47,6 +52,7 @@ const data = [
   {
     id: 6,
     title: 'Website Portfolio',
+    src: '../images/Snapshoot Portfolio.jpg',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.has been the industry standard',
     lang: ['html', 'Bootstrap', 'Ruby'],
     live: 'https://blase147.github.io/Mobile-first-Portfolio-Project',

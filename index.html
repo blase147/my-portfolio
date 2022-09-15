@@ -142,7 +142,7 @@
         so if you'd like to chat please get in touch.</p>
 
       <div class="get-in-touch">
-        <form action="https://formspree.io/f/xqkjanrn" method="POST">
+        <form name="get-in-touch" action="https://formspree.io/f/xqkjanrn" onsubmit="return validateForm()" method="POST">
           <input type="text" name="fullname" maxlength="30" placeholder="Fullname" required>
           <input type="email" name="email" placeholder="Email address" required>
           <textarea name="comment" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>

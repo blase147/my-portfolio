@@ -886,13 +886,119 @@ footer {
 
   .main-project {
     padding-bottom: 100px;
-    width: 80%;
-    margin: auto;
+    /* width: 80%; */
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     color: #fff;
   }
+
+  .popup-project {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100vh;
+    background-color: rgb(186, 186, 186, 0.3);
+    width: 100vw;
+    padding-bottom: 50px;
+  }
+
+  .popup-title {
+    display: flex;
+  }
+
+  .popup-project h1 {
+    /* margin: auto; */
+    font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 30px;
+    padding-top: 70px;
+  }
+
+  .popup-header .tags {
+    gap: 3px;
+    margin-right: 60px;
+    margin-left: 0%;
+  }
+  
+  .popup-title .close-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    margin-left: 0;
+    width: 20%;
+  }
+  
+.popup-body-footer {
+  display: flex;
+  margin: auto;
+}
+.popup-image-body{
+  width: 60%;
+}
+.popup-image {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.popup-body {
+}
+
+.popup-footer{
+  width: 40%;
+  margin-right: 31px;
+}
+  
+  .popup-project p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+   }
+  
+  .popup-footer > div {
+    display: flex;
+  }
+  
+  .popup-project button {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    align-items: center;
+    font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 55px;
+    margin-right: 25px;
+    padding-left: 10px;
+  }
+  
+  .popup-button {
+    display: flex;
+    width: 50%;
+  }
+  
+  .popup-container {
+    margin: auto;
+    background-color: white;
+    min-width: 90vw;
+    min-height: 90vh;
+    color: #000;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
 
   .card-project {
     height: 635px;
