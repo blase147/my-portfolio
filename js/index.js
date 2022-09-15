@@ -5,8 +5,6 @@ const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById('nav-items');
 const projectContainer = document.getElementById('portfolio');
 const popupContainer = document.getElementById('popup-container'); 
-// const seeLive = document.getElementById('see-live');
-// const source = document.getElementById('source');
 const seeProject = document.getElementById('see-project');
 
 menuBtn.addEventListener('click', () => {
@@ -23,7 +21,6 @@ menu.addEventListener('click', () => {
   closeBtn.style.display = 'none';
   menu.classList.remove('menu-shown');
 });
-
 
 
 function validateForm() {
