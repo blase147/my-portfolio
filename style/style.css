@@ -390,7 +390,7 @@ p img {
 .popup-project {
   position: fixed;
   z-index: 999;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -443,7 +443,7 @@ p img {
   display: flex;
 }
 
-.popup-project button {
+.popup-project  > .popup-button {
   display: flex;
   gap: 28px;
   width: 100%;
@@ -465,13 +465,11 @@ p img {
 .popup-container {
   margin: auto;
   background-color: white;
-  min-width: 90vw;
-  min-height: 90vh;
+  max-width: 90vw;
+  padding: 1rem;
+  min-height: 95vh;
   color: #000;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 20px;
-  padding-right: 20px;
+  
 }
 
 .about {

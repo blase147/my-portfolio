@@ -35,48 +35,51 @@ data.forEach((data) => {
       ${lang.map((lang) => `<li class="tag">${lang}</li>`).join('')}
     </ul>
     <button class="btn-sp" type="button"> See Projects</button>
-  </div>`;
-
-  projectContainer.appendChild(project);
-});
-
-const popWindow = document.createElement('div');
-popWindow.innerHTML += `
+    </div>`;
+    projectContainer.appendChild(project);
+    const projectBtn = project.querySelector(".btn-sp");
+    projectBtn.addEventListener("click", () => { 
+    const popWindow = document.createElement("div");
+    popup.style.display="flex";
+    popWindow.innerHTML += `
   <div class="popup-container">
   <!-- popup header -->
   <div class="popup-header">
     <div class="popup-title">
-    <h1 class="popup-title">Multi Post Stories</h1>
-    <button class="close-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+    <h1 class="popup-title">${title}</h1>
+    <button class="close-popup-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <ul class="tags">
-      <li class="li">html</li>
-      <li class="li">Bootstrap</li>
-      <li class="li">Ruby on Rail</li>
+      ${lang.map((tech) => `<li class="li">${tech}</li>`).join("")}
     </ul>
   </div>
   <!-- popup body -->
   <div class="popup-body">
-    <img src="/img/Snapshoot Portfolio.jpg" alt="Snapshoot">
+    <img src="${data.src}" alt="Snapshoot">
   </div>
   <!-- popup footer -->
   <div class="popup-footer">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-    took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-    but also the leap into electronic typesetting, remaining essent</p>
+    <p>${data.description}</p>
     <div>
-    <div class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></div>
-    <div class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></div>
+    <a href="${
+      data.live
+    }" target="_blank" class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></a>
+    <a href="${
+      data.source
+    }" target="_blank" class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></a>
     </div>
   </div>
   </div>
 </div> `;
-popup.appendChild(popWindow);
+    popup.appendChild(popWindow);
+    const closePopupBtn = document.querySelector(".close-popup-btn");
+    closePopupBtn.addEventListener("click", () => { 
+      popup.removeChild(popWindow);
+      popup.style.display="none";
+     }); 
+      
+   });
 
-const closeProjectBtn = popup.querySelector('.close-btn');
-closeProjectBtn.addEventListener('click', () => {
-  popup.firstElementChild.remove();
-  popup.style.display = 'none';
-  projectContainer.style.display = 'grid';
 });
+
+
