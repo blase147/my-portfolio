@@ -23,20 +23,13 @@ menu.addEventListener('click', () => {
 });
 
 
-function validateForm() {
-  let x = document.forms["get-in-touch"]["fname"].value;
-  if (x == "0") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-
-
-
-
-
-
-
+// function validateForm() {
+//   let x = document.forms["get-in-touch"]["fname"].value;
+//   if (x == "0") {
+//     alert("Name must be filled out");
+//     return false;
+//   }
+// }
 
 
 data.forEach((data) => {
