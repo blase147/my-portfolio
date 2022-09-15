@@ -81,5 +81,3 @@ data.forEach((data) => {
    });
 
 });
-
-
