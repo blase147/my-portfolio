@@ -5,6 +5,7 @@ const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById('nav-items');
 const projectContainer = document.getElementById('portfolio');
 const popup = document.getElementById('popup');
+
 menuBtn.addEventListener('click', () => {
   menu.classList.add('menu-shown');
   closeBtn.style.display = 'block';
@@ -36,50 +37,70 @@ data.forEach((data) => {
     </ul>
     <button class="btn-sp" type="button"> See Projects</button>
     </div>`;
-    projectContainer.appendChild(project);
-    const projectBtn = project.querySelector(".btn-sp");
-    projectBtn.addEventListener("click", () => { 
-    const popWindow = document.createElement("div");
-    popup.style.display="flex";
+  projectContainer.appendChild(project);
+
+  const projectBtn = project.querySelector('.btn-sp');
+  projectBtn.addEventListener('click', () => {
+    const popWindow = document.createElement('div');
+    popup.style.display = 'flex';
     popWindow.innerHTML += `
   <div class="popup-container">
-  <!-- popup header -->
-  <div class="popup-header">
-    <div class="popup-title">
-    <h1 class="popup-title">${title}</h1>
-    <button class="close-popup-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <ul class="tags">
-      ${lang.map((tech) => `<li class="li">${tech}</li>`).join("")}
-    </ul>
-  </div>
-  <!-- popup body -->
-  <div class="popup-body">
-    <img src="${data.src}" alt="Snapshoot">
-  </div>
-  <!-- popup footer -->
-  <div class="popup-footer">
-    <p>${data.description}</p>
-    <div>
-    <a href="${
-      data.live
-    }" target="_blank" class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></a>
-    <a href="${
-      data.source
-    }" target="_blank" class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></a>
-    </div>
-  </div>
-  </div>
+      <!-- popup header -->
+      <div class="popup-header">
+            <div class="popup-title">
+                <h1 class="popup-title">${title}</h1>
+                <button class="close-popup-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="tags">
+                ${lang.map((tech) => `<li class="li">${tech}</li>`).join('')}
+            </ul>
+      </div>
+          
+      <!-- popup body -->
+      <div class="popup-body">
+            <img src="${data.src}" alt="Snapshoot">
+      </div>
+
+      <!-- popup footer -->
+      <div class="popup-footer">
+          <p>${data.description}</p>
+          <div>
+              <a href="${data.live}" target="_blank" class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></a>
+              <a href="${data.source}" target="_blank" class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></a>
+          </div>
+      </div>
+      </div>
 </div> `;
     popup.appendChild(popWindow);
-    const closePopupBtn = document.querySelector(".close-popup-btn");
-    closePopupBtn.addEventListener("click", () => { 
+    const closePopupBtn = document.querySelector('.close-popup-btn');
+    closePopupBtn.addEventListener('click', () => {
       popup.removeChild(popWindow);
-      popup.style.display="none";
-     }); 
-      
-   });
-
+      popup.style.display = 'none';
+    });
+  });
 });
 
+const form = document.querySelector('#form');
+const messageContainer = document.querySelector('.message');
 
+const isValidEmail = (email) => {
+  const eamilPattern = /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  return eamilPattern.test(email);
+};
+
+form.addEventListener('submit', (e) => {
+  const formData = new FormData(e.target);
+  const valid = isValidEmail(formData.get('email'));
+  if (valid) {
+    const message = document.createElement('span');
+    message.classList.add('success');
+    message.innerHTML = 'Data sent successfully!';
+    messageContainer.replaceChildren(message);
+  } else {
+    e.preventDefault();
+    const message = document.createElement('span');
+    message.classList.add('error');
+    message.innerHTML = 'Incorrect format. Enter email in lowercase';
+    messageContainer.replaceChildren(message);
+  }
+});
