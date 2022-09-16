@@ -54,6 +54,10 @@
     </div>
   </section>
 
+  <section id="my-works" class="my-works">
+
+  </section>
+
   <section class="my-works">
     <div class="my-recent-works-title">
       <h1 class="my-recent-work-title-h1">My Recent Works</h1>
@@ -74,7 +78,7 @@
           <li class="li">bootstrap</li>
           <li class="li">Ruby</li>
         </ul>
-        <button  type="button">See Project</button>
+        <button class="btn-sp" type="button">See Project</button>
       </div>
     </div>
   </section>
@@ -142,9 +146,10 @@
         so if you'd like to chat please get in touch.</p>
 
       <div class="get-in-touch">
-        <form action="https://formspree.io/f/xqkjanrn" method="POST">
+        <form id="getinTouch" action="https://formspree.io/f/xqkjanrn" method="POST">
           <input type="text" name="fullname" maxlength="30" placeholder="Fullname" required>
-          <input type="email" name="email" placeholder="Email address" required>
+          <input id="mail" class="email" type="email" name="email" placeholder="Email address">
+          <small></small>
           <textarea name="comment" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
           <!-- your other form fields go here -->
           <div class="align-left">
@@ -172,4 +177,5 @@
   </div>
 </body>
 <script type="module" src="js/index.js"></script>
+<script type="module" src="js/validateform.js"></script>
 </html>

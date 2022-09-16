@@ -5,6 +5,8 @@ const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById('nav-items');
 const projectContainer = document.getElementById('portfolio');
 const popup = document.getElementById('popup');
+// const myWorksContainer = document.getElementById('my-works');
+
 menuBtn.addEventListener('click', () => {
   menu.classList.add('menu-shown');
   closeBtn.style.display = 'block';
@@ -19,9 +21,10 @@ menu.addEventListener('click', () => {
   menu.classList.remove('menu-shown');
 });
 
+
 data.forEach((data) => {
   const {
-    title, description, lang,
+    title, description, lang
   } = data;
 
   const project = document.createElement('div');
@@ -37,39 +40,38 @@ data.forEach((data) => {
     <button class="btn-sp" type="button"> See Projects</button>
     </div>`;
   projectContainer.appendChild(project);
+
   const projectBtn = project.querySelector('.btn-sp');
   projectBtn.addEventListener('click', () => {
     const popWindow = document.createElement('div');
     popup.style.display = 'flex';
     popWindow.innerHTML += `
   <div class="popup-container">
-  <!-- popup header -->
-  <div class="popup-header">
-    <div class="popup-title">
-    <h1 class="popup-title">${title}</h1>
-    <button class="close-popup-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <ul class="tags">
-      ${lang.map((tech) => `<li class="li">${tech}</li>`).join('')}
-    </ul>
-  </div>
-  <!-- popup body -->
-  <div class="popup-body">
-    <img src="${data.src}" alt="Snapshoot">
-  </div>
-  <!-- popup footer -->
-  <div class="popup-footer">
-    <p>${data.description}</p>
-    <div>
-    <a href="${
-  data.live
-}" target="_blank" class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></a>
-    <a href="${
-  data.source
-}" target="_blank" class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></a>
-    </div>
-  </div>
-  </div>
+      <!-- popup header -->
+      <div class="popup-header">
+            <div class="popup-title">
+                <h1 class="popup-title">${title}</h1>
+                <button class="close-popup-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="tags">
+                ${lang.map((tech) => `<li class="li">${tech}</li>`).join('')}
+            </ul>
+      </div>
+          
+      <!-- popup body -->
+      <div class="popup-body">
+            <img src="${data.src}" alt="Snapshoot">
+      </div>
+
+      <!-- popup footer -->
+      <div class="popup-footer">
+          <p>${data.description}</p>
+          <div>
+              <a href="${data.live}" target="_blank" class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></a>
+              <a href="${data.source}" target="_blank" class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></a>
+          </div>
+      </div>
+      </div>
 </div> `;
     popup.appendChild(popWindow);
     const closePopupBtn = document.querySelector('.close-popup-btn');
@@ -79,3 +81,25 @@ data.forEach((data) => {
     });
   });
 });
+
+
+    // const myWorks = document.createElement('div');
+// myWorks.innerHTML +=`    <div class="my-recent-works-title">
+// <h1 class="my-recent-work-title-h1">${myRecentWorkTitle}</h1>
+// <hr class="my-recent-work-title-hr">
+// </div>
+// <div class="my-recent-works">
+// <img class="featured-image" src="${featuredImage}" alt="image">
+// <div class="multi-post-stories">
+//   <h2>${multiPostStoriesTitle}</h2>
+//   <p>
+//   ${multiPostStoriesDescription}
+//   </p>
+//   <ul>
+//   ${lang2.map((tech) => `<li class="li">${tech}</li>`).join('')}
+//   </ul>
+//   <button  type="button">See Project</button>
+// </div>
+// </div>
+// ` 
+// myWorksContainer.appendChild(myWorks);
