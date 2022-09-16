@@ -622,6 +622,22 @@ textarea:hover {
   transform: translate(10px);
 }
 
+.success {
+  font-size: 1em;
+  color: #06d206;
+  font-family: monospace;
+  letter-spacing: 3.5px;
+  font-weight: bolder;
+}
+
+.error {
+  font-size: 1em;
+  color: #d83030;
+  font-family: monospace;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
 .button {
   margin-bottom: 80px;
 }
@@ -1210,6 +1226,22 @@ footer {
     letter-spacing: 0.03em;
     text-align: left;
     width: 8.86em;
+  }
+
+  .success {
+    font-size: 1em;
+    color: #06d206;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3.5px;
+    font-weight: bolder;
+  }
+
+  .error {
+    font-size: 1em;
+    color: #d83030;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
   }
 
   .footer-rule-1 {

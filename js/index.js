@@ -5,7 +5,7 @@ const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById('nav-items');
 const projectContainer = document.getElementById('portfolio');
 const popup = document.getElementById('popup');
-// const myWorksContainer = document.getElementById('my-works');
+
 
 menuBtn.addEventListener('click', () => {
   menu.classList.add('menu-shown');
@@ -83,23 +83,29 @@ data.forEach((data) => {
 });
 
 
-    // const myWorks = document.createElement('div');
-// myWorks.innerHTML +=`    <div class="my-recent-works-title">
-// <h1 class="my-recent-work-title-h1">${myRecentWorkTitle}</h1>
-// <hr class="my-recent-work-title-hr">
-// </div>
-// <div class="my-recent-works">
-// <img class="featured-image" src="${featuredImage}" alt="image">
-// <div class="multi-post-stories">
-//   <h2>${multiPostStoriesTitle}</h2>
-//   <p>
-//   ${multiPostStoriesDescription}
-//   </p>
-//   <ul>
-//   ${lang2.map((tech) => `<li class="li">${tech}</li>`).join('')}
-//   </ul>
-//   <button  type="button">See Project</button>
-// </div>
-// </div>
-// ` 
-// myWorksContainer.appendChild(myWorks);
+
+const form = document.querySelector("#form");
+const messageContainer = document.querySelector(".message");
+
+const isValidEmail = (email) => {
+  const eamilPattern =
+    /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  return eamilPattern.test(email);
+};
+
+form.addEventListener("submit", (e) => {
+  const formData = new FormData(e.target);
+  const valid = isValidEmail(formData.get("email"));
+  if (valid) {
+    const message = document.createElement("span");
+    message.classList.add("success");
+    message.innerHTML = "Data sent successfully!";
+    messageContainer.replaceChildren(message);
+  } else {
+    e.preventDefault();
+    const message = document.createElement("span");
+    message.classList.add("error");
+    message.innerHTML = "Incorrect format. Enter email in lowercase";
+    messageContainer.replaceChildren(message);
+  }
+});
