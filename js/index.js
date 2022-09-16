@@ -6,7 +6,6 @@ const menu = document.getElementById('nav-items');
 const projectContainer = document.getElementById('portfolio');
 const popup = document.getElementById('popup');
 
-
 menuBtn.addEventListener('click', () => {
   menu.classList.add('menu-shown');
   closeBtn.style.display = 'block';
@@ -21,10 +20,9 @@ menu.addEventListener('click', () => {
   menu.classList.remove('menu-shown');
 });
 
-
 data.forEach((data) => {
   const {
-    title, description, lang
+    title, description, lang,
   } = data;
 
   const project = document.createElement('div');
@@ -82,71 +80,68 @@ data.forEach((data) => {
   });
 });
 
-
-
-const form = document.querySelector("#form");
-const messageContainer = document.querySelector(".message");
+const form = document.querySelector('#form');
+const messageContainer = document.querySelector('.message');
 
 const isValidEmail = (email) => {
-  const eamilPattern =
-    /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  const eamilPattern = /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   return eamilPattern.test(email);
 };
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   const formData = new FormData(e.target);
-  const valid = isValidEmail(formData.get("email"));
+  const valid = isValidEmail(formData.get('email'));
   if (valid) {
-    const message = document.createElement("span");
-    message.classList.add("success");
-    message.innerHTML = "Data sent successfully!";
+    const message = document.createElement('span');
+    message.classList.add('success');
+    message.innerHTML = 'Data sent successfully!';
     messageContainer.replaceChildren(message);
   } else {
     e.preventDefault();
-    const message = document.createElement("span");
-    message.classList.add("error");
-    message.innerHTML = "Incorrect format. Enter email in lowercase";
+    const message = document.createElement('span');
+    message.classList.add('error');
+    message.innerHTML = 'Incorrect format. Enter email in lowercase';
     messageContainer.replaceChildren(message);
   }
 });
 
-  // Mobile form Local Storage
-  const name = form.elements.item(0);
-  const email = form.elements.item(1);
-  const comment = form.elements.item(2);
-  function saveData() {
-    const data = {
-      Name: form.elements.item(0).value,
-      Email: form.elements.item(1).value,
-      Comment: form.elements.item(2).value,
-    };
-    localStorage.setItem('data', JSON.stringify(data));
-  }
+// Mobile form Local Storage
+const name = form.elements.item(0);
+const email = form.elements.item(1);
+const comment = form.elements.item(2);
+function saveData() {
+  const data = {
+    Name: form.elements.item(0).value,
+    Email: form.elements.item(1).value,
+    Comment: form.elements.item(2).value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
 
-  let formObject = JSON.parse(localStorage.getItem('data'));
-  if (!formObject) {
-    formObject = {
-      name: '',
-      email: '',
-      comment: '',
-    };
-    saveData();
-  }
+let formObject = JSON.parse(localStorage.getItem('data'));
+if (!formObject) {
+  formObject = {
+    name: '',
+    email: '',
+    comment: '',
+  };
+  saveData();
+}
 
-  name.value = formObject.name;
-  name.addEventListener('change', (e) => {
-    formObject.name = e.target.value;
-    localStorage.setItem('data', JSON.stringify(formObject));
-  });
+name.value = formObject.name;
+name.addEventListener('change', (e) => {
+  formObject.name = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
 
-  email.value = formObject.email;
-  email.addEventListener('change', (e) => {
-    formObject.email = e.target.value;
-    localStorage.setItem('data', JSON.stringify(formObject));
-  });
+email.value = formObject.email;
+email.addEventListener('change', (e) => {
+  formObject.email = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
 
-  comment.value = formObject.comment;
-  comment.addEventListener('change', (e) => {
-    formObject.comment = e.target.value;
-    localStorage.setItem('data', JSON.stringify(formObject));
-  });
+comment.value = formObject.comment;
+comment.addEventListener('change', (e) => {
+  formObject.comment = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
