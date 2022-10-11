@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Description 
-- This is a portfolio Website
+- This is a portfolio Website designed to showcase the talent and skills of a software engineer through dynamic dispaly of completed projects and jobs. It also has a contact form for quick responses and feedback
 # PORTFOLIO PROJECT
 
 > Here is a link to the live view https://blase147.github.io/Mobile-first-Portfolio-Project/
