@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-All changes were successful as linters errors were all fixed. The introductory, "my recent works", "about me" and the contact form page has been finished for the mobile version and desktop version for the personal portfolio. The portfolio was successfully deployed using github pages.
-
+# Project Description 
+- This is a portfolio Website
 # PORTFOLIO PROJECT
 
 > Here is a link to the live view https://blase147.github.io/Mobile-first-Portfolio-Project/
