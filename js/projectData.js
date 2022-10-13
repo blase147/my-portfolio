@@ -1,6 +1,6 @@
 const data = [
 
-  { 
+  {
     id: 1,
     hoverGb: '../img/alumniClubfaint.jpg',
     title: 'Alumni Club Website',
