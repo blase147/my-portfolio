@@ -22,12 +22,12 @@ menu.addEventListener('click', () => {
 
 data.forEach((data) => {
   const {
-    title, description, lang,
+    title, description, lang, hoverGb,
   } = data;
 
   const project = document.createElement('div');
   project.innerHTML += `
-  <div class="card-project scale-effect">
+  <div class="card-project scale-effect" style="background-image:url('${hoverGb}')">
     <h1 class="title">${title}</h1>
     <p class="description">
       ${description}
