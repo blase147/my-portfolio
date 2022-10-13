@@ -304,6 +304,7 @@ form div > button {
   margin: 10px 20px;
   font-size: 1.99rem;
 }
+
 .description {
   font-family: "Inter", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
@@ -851,7 +852,6 @@ footer {
   }
 
   .main-project {
-    display: flex;
     grid-template-columns: repeat(3, 1fr);
     flex-direction: column;
     box-sizing: border-box;
@@ -859,13 +859,14 @@ footer {
     margin: auto;
     width: 80%;
     display: grid;
+
     /* gap: 22px; */
     color: #fff;
   }
 
-.popup-body img {
-  width: 60%;
-}
+  .popup-body img {
+    width: 60%;
+  }
 
   .card-project {
     display: flex;
@@ -874,7 +875,6 @@ footer {
     background-size: cover;
     font-size: 23px;
     color: black;
-
   }
 
   .card-project:hover {
@@ -883,9 +883,8 @@ footer {
     background-image: url('../img/bg-image-clear.png');
     color: black;
   }
-  
+
   .btn-sp {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;

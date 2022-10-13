@@ -39,7 +39,7 @@ const data = [
   {
     id: 4,
     hoverGb: '../img/portfoliofaint.jpg',
-    title: 'Portfolio Website Club Website',
+    title: 'Portfolio Website',
     description:
       'This is a portfolio Website designed to showcase the talent and skills of a software engineer through dynamic display of completed projects and jobs. It also has a contact form for quick responses and feedback',
     lang: ['html', 'CSS', 'Bootstrap'],
