@@ -22,13 +22,14 @@ menu.addEventListener('click', () => {
 
 data.forEach((data) => {
   const {
-    title, description, lang, hoverGb,
+    title, description, lang, hoverProFaint,
   } = data;
 
   const project = document.createElement('div');
   project.innerHTML += `
-  <div class="card-project scale-effect" style="background-image:url('${hoverGb}')">
-    <h1 class="title">${title}</h1>
+  <div class="card-project scale-effect">
+  <img src="${hoverProFaint}" alt="Project">  
+  <h1 class="title">${title}</h1>
     <p class="description">
       ${description}
     </p>
@@ -51,7 +52,7 @@ data.forEach((data) => {
                 <h1 class="popup-title">${title}</h1>
                 <button class="close-popup-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <ul class="tags">
+            <ul class="popTags">
                 ${lang.map((tech) => `<li class="li">${tech}</li>`).join('')}
             </ul>
       </div>
@@ -64,11 +65,20 @@ data.forEach((data) => {
       <!-- popup footer -->
       <div class="popup-footer">
           <p>${data.description}</p>
-          <div>
-              <a href="${data.live}" target="_blank" class="popup-button"><button  type="button">See Live<img  src="/img/see-live.png" alt="see live icon"></button></a>
-              <a href="${data.source}" target="_blank" class="popup-button"><button  type="button">Source<img src="/img/Icon-GitHub.png" alt="github icon>"></button></a>
-          </div>
-      </div>
+          <div id="liveSourceContainer">
+              <div>
+                <a href="${data.live}" target="_blank">
+                  <button class="popup-button liveSource" type="button">See Live
+                    <img  src="/img/see-live.png" alt="see live icon">
+                  </button></a>
+              </div>
+              <div>
+                <a href="${data.source}" target="_blank">
+                  <button class="popup-button liveSource" type="button">Source
+                  <img src="/img/Icon-GitHub.png" alt="github icon">
+                  </button></a>
+              </div>
+            </div>
       </div>
 </div> `;
     popup.appendChild(popWindow);
