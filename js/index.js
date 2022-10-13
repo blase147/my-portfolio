@@ -22,7 +22,7 @@ menu.addEventListener('click', () => {
 
 data.forEach((data) => {
   const {
-    title, description, lang, hoverProFaint, hoverProClear,
+    title, description, lang, hoverProFaint,
   } = data;
 
   const project = document.createElement('div');
