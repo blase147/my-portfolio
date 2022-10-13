@@ -154,25 +154,18 @@ nav {
 
 .social-icons {
   display: flex;
-  flex: content;
   padding: 0;
   width: 12.5em;
-  height: 40px;
   justify-content: space-around;
-  align-items: center;
-  gap: 0.3125em;
 }
 
 ul li {
   list-style-type: none;
-}
-
-li:hover {
-  background: #f55800;
+  transform: scale(1.3);
 }
 
 .social-icons li:hover {
-  background-color: #ff6b00;
+  transform: scale(1.3);
 }
 
 .my-works {
@@ -292,8 +285,7 @@ form div > button {
   display: flex;
   max-width: 90vw;
   flex-direction: column;
-  padding-top: 250px;
-  background-image: url('../img/bg-image2.jpg');
+  /* background-image: url('../img/bg-image2.jpg'); */
   background-size: cover;
   color: black;
 }
@@ -313,21 +305,19 @@ form div > button {
 }
 
 .tags {
-  margin: 20px;
-  padding-left: 0;
   display: flex;
   flex-direction: row;
-  height: 45px;
-  gap: 15px;
-  font-size: 23px;
+  margin: 20px;
+  gap: 60px;
+  padding-left: 0;
+  height: 10vh;
+  font-size: 20px;
 }
 
 .li {
-  border: 2px solid rgb(99, 96, 96);
   padding: 10px;
-  background: rgba(255, 255, 255, 0.24);
-  line-height: 20px;
   font-size: 16px;
+  margin-right: 10px;
 }
 
 .btn-sp {
@@ -393,16 +383,16 @@ form div > button {
   padding-right: 31px;
 }
 
-.popup-footer > div {
+/* .popup-footer > div {
   display: flex;
-}
+} */
 
-.popup-button {
+/* .popup-button {
   display: flex;
   width: 50%;
-}
+} */
 
-.popup-project > .popup-button {
+/* .popup-project > .popup-button {
   display: flex;
   gap: 28px;
   width: 100%;
@@ -414,7 +404,7 @@ form div > button {
   line-height: 24px;
   margin-right: 25px;
   padding-left: 10px;
-}
+} */
 
 .popup-container {
   margin: auto;
@@ -647,6 +637,10 @@ footer {
     font-size: 20px;
   }
 
+  .app-bar a:hover {
+    color: rgb(238, 100, 8);
+  }
+
   .nav-items {
     display: flex;
     font-size: 24px;
@@ -719,19 +713,21 @@ footer {
   }
 
   .social-icons-container ul {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 18.75em;
-    left: 2.1em;
-    display: block;
-    justify-content: space-around;
+    left: 1px;
   }
 
-  li:hover {
-    background: #f55800;
+  ul li:hover {
+    transform: scale(1.3);
   }
 
-  .social-icons-container ul li {
-    margin: 32px;
+  .social-icons-container ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 32px;
   }
 
   .my-works {
@@ -852,15 +848,11 @@ footer {
   }
 
   .main-project {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-direction: column;
-    box-sizing: border-box;
     padding-bottom: 100px;
     margin: auto;
     width: 80%;
-    display: grid;
-
-    /* gap: 22px; */
     color: #fff;
   }
 
@@ -871,17 +863,25 @@ footer {
   .card-project {
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 20px;
     background-size: cover;
     font-size: 23px;
     color: black;
   }
 
   .card-project:hover {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../img/bg-image-clear.png');
     color: black;
+  }
+  .card-project img {
+   width: 100%; 
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    height: 10vh;
+    font-size: 20px;
   }
 
   .btn-sp {
@@ -922,10 +922,38 @@ footer {
     font-family: inherit;
   }
 
-  .li {
-    border: 1px solid rgb(80, 77, 77);
-    padding: 10px;
+  .popTags  {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: inherit;
+    
+  }  
+  
+  .popTags  li {
+    border: 1px solid grey;
   }
+
+#liveSourceContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 60%;
+}
+
+  .liveSource {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .popup-button {
+    /* display: flex;
+    width: 50%; */
+  }
+  
 
   .scale-effect:hover {
     transform: scale(1.02);
@@ -1146,5 +1174,16 @@ footer {
     background: #000;
     width: 100%;
     display: none;
+  }
+
+  .social-icons {
+    display: flex;
+    flex: content;
+    justify-content: space-around;
+    align-items: center;
+  }  
+  
+  .social-icons li:hover {
+    transform: scale(1.83);
   }
 }
