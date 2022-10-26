@@ -1,13 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # PORTFOLIO PROJECT
-
 > Here is a link to the live view https://blase147.github.io/Mobile-first-Portfolio-Project/
-
 
 ## Built With
 - Major languages -- HTML and CSS
-- Technologies used --GitHub --Visual Studio Code --GitBash
+
+## Technologies used
+- GitHub 
+- Visual Studio Code
+- GitBash
 
 ## Instuctions to set up project locally
 - Download zip file of the project
